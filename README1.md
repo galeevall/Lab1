@@ -87,7 +87,7 @@ graph TD
     B --> C[/peoplCount = 0/]
     C --> D{a <= x}
     D -- Нет --> E[/peoplCount = peoplCount + 1/]
-    D -- Да --> E[/x = x - a/]
+    
 
 
 
