@@ -84,7 +84,7 @@
 ```mermaid
 graph TD
     A([Начало]) --> B[/Ввести: x, a, b , c/]
-    B --> C{peoplCount=x}
+    B --> C[/peoplCount = 0/]
 
 
 
