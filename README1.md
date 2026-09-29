@@ -98,6 +98,7 @@ graph TD
     J -- Да --> L[/x = x - c/]
     K --> M[/Вывод peoplCount/]
     L --> M[/Вывод peoplCount/]
+    M --> N([Конец])
 
 
 
