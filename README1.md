@@ -94,8 +94,8 @@ graph TD
     G -- Да --> I[/x = x - b/]
     H --> J{c <= x}
     I --> J{c<= x}
-    J -- Нет --> H[/peoplCount = peoplCount + 1/]
-    J -- Да --> I[/x = x - c/]
+    J -- Нет --> K[/peoplCount = peoplCount + 1/]
+    J -- Да --> L[/x = x - c/]
 
 
 
