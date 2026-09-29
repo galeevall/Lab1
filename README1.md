@@ -85,6 +85,7 @@
 graph TD
     A([Начало]) --> B[/Ввести: x, a, b , c/]
     B --> C[/peoplCount = 0/]
+    C --> D{a <= x}
 
 
 
