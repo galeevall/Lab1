@@ -92,6 +92,10 @@ graph TD
     F --> G{b <= x}
     G -- Нет --> H[/peoplCount = peoplCount + 1/]
     G -- Да --> I[/x = x - b/]
+    H --> J{c <= x}
+    I --> J{c<= x}
+    J -- Нет --> H[/peoplCount = peoplCount + 1/]
+    J -- Да --> I[/x = x - c/]
 
 
 
