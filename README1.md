@@ -96,6 +96,8 @@ graph TD
     I --> J{c<= x}
     J -- Нет --> K[/peoplCount = peoplCount + 1/]
     J -- Да --> L[/x = x - c/]
+    K --> M[/Вывод peoplCount/]
+    L --> M[/Вывод peoplCount/]
 
 
 
