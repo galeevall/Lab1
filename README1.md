@@ -88,9 +88,10 @@ graph TD
     C --> D{a <= x}
     D -- Нет --> E[/peoplCount = peoplCount + 1/]
     D -- Да --> F[/x = x - a/]
-    E --> H{b <= x}
-    F --> H{b <= x}
-    
+    E --> G{b <= x}
+    F --> G{b <= x}
+    G -- Нет --> H[/peoplCount = peoplCount + 1/]
+    G -- Да --> I[/x = x - b/]
 
 
 
