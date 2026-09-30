@@ -105,4 +105,45 @@ graph TD
 
 ### 5. Программа
 
+```java
+
+import java.io.IOException;
+import java.util.Scanner;
+public class Container{
+    public static void main(String[] args)
+    throws IOException{
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+
+
+        int peoplCount = 0;
+
+        if (a<=x)
+            x = x - a;
+        else
+            peoplCount = peoplCount +1;
+
+        if (b<=x)
+            x = x - b;
+        else
+            peoplCount = peoplCount+1;
+
+        if (c<=x)
+            x = x -c;
+        else
+            peoplCount = peoplCount+1;
+
+        System.out.print(peoplCount);
+
+
+
+
+    }
+
+}
+
+```
 
