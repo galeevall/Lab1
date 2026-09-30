@@ -107,35 +107,45 @@ graph TD
 
 ```java
 
+// Импортируем класс для обработки ошибок ввода-вывода данных
 import java.io.IOException;
 import java.util.Scanner;
 public class Container{
     public static void main(String[] args)
     throws IOException{
+        // Объявляем объект класса Scanner для ввода данных
         Scanner in = new Scanner(System.in);
+        // Считывание четырех целых чисел x,a,b,c из консоли
         int x = in.nextInt();
         int a = in.nextInt();
         int b = in.nextInt();
         int c = in.nextInt();
 
-
+        // Создаем счетчик людей, которые не смогли выбросить мусор
         int peoplCount = 0;
 
+        // Проверяем помещается ли первый пакет в контейнер
         if (a<=x)
+            //Если да уменьшаем свободное место в контейнере (x) на объем пакета a, иначе увеличиваем счетчик на 1
             x = x - a;
         else
             peoplCount = peoplCount +1;
 
+        // Проверяем помещается ли второй пакет в контейнер
         if (b<=x)
+            //Если да уменьшаем свободное место в контейнере (x) на объем пакета b, иначе увеличиваем счетчик на 1
             x = x - b;
         else
             peoplCount = peoplCount+1;
 
+        // Проверяем помещается ли третий пакет в контейнер
         if (c<=x)
+            //Если да уменьшаем свободное место в контейнере (x) на объем пакета с, иначе увеличиваем счетчик на 1
             x = x -c;
         else
             peoplCount = peoplCount+1;
 
+        // Выводим итоговое количество людей, которые не смогли выбросить мусор
         System.out.print(peoplCount);
 
 
@@ -146,4 +156,6 @@ public class Container{
 }
 
 ```
+### 6. Анализ правильности решения
+
 
