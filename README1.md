@@ -122,31 +122,31 @@ public class Container{
         int c = in.nextInt();
 
         // Создаем счетчик людей, которые не смогли выбросить мусор
-        int peoplCount = 0;
+        int peopleCount = 0;
 
         // Проверяем помещается ли первый пакет в контейнер
         if (a<=x)
             //Если да уменьшаем свободное место в контейнере (x) на объем пакета a, иначе увеличиваем счетчик на 1
             x = x - a;
         else
-            peoplCount = peoplCount +1;
+            peopleCount = peopleCount +1;
 
         // Проверяем помещается ли второй пакет в контейнер
         if (b<=x)
             //Если да уменьшаем свободное место в контейнере (x) на объем пакета b, иначе увеличиваем счетчик на 1
             x = x - b;
         else
-            peoplCount = peoplCount+1;
+            peopleCount = peopleCount+1;
 
         // Проверяем помещается ли третий пакет в контейнер
         if (c<=x)
             //Если да уменьшаем свободное место в контейнере (x) на объем пакета с, иначе увеличиваем счетчик на 1
             x = x -c;
         else
-            peoplCount = peoplCount+1;
+            peopleCount = peopleCount+1;
 
         // Выводим итоговое количество людей, которые не смогли выбросить мусор
-        System.out.print(peoplCount);
+        System.out.print(peopleCount);
 
 
 
